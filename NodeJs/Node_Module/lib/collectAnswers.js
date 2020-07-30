@@ -6,7 +6,7 @@ const rl = readline.createInterface({
     output:process.stdout
 });
 
-module.exports = (questions, done) =>{
+module.exports = (questions, done = f => f) =>{
     const answers = [];
     const [firstQuestion, secondQuestion, thirdQuestion] = questions;
     //done(answers);
